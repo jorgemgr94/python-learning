@@ -1,0 +1,12 @@
+# ./docker-compose.yml
+version: "3"
+
+services:
+  libroazul:
+    container_name:  python-learning
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    volumes:
+      - "./:/app"
+    tty: true
